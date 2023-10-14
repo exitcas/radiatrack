@@ -1,5 +1,5 @@
 # Radia-track
-Este script guarda la radiación solar por hora en un archivo JSON](https://github.com/exitcas). Datos proveídos por la [Estación Meteorológica Automática
+Este script guarda la radiación solar por hora en un archivo [JSON](https://es.wikipedia.org/wiki/JSON). Datos proveídos por la [Estación Meteorológica Automática
 de la UNLP](https://meteo.fcaglp.unlp.edu.ar/).
 
 **[ADVENTENCIA]**: Este script usa la hora de su dispositivo para determinar el horario.
