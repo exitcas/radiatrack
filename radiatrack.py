@@ -23,7 +23,7 @@ def obtener_radiacion(pagina_url):
     arbol = obtener_arbol_web(pagina_url)
 
     extracto_radiacion = arbol.findall("./body/div[2]/table/tbody/tr[2]/td[1]/div/table/tbody/tr/td")[1].text
-    radiacion = int(extracto_radiacion.split("\xa0")[0]) * 100
+    radiacion = int(extracto_radiacion.split("\xa0")[0])
 
     return radiacion
 
@@ -70,5 +70,5 @@ while True:
     radiacion = obtener_radiacion(PAGINA_URL)
     guardar_radiacion_db(hora_consulta, radiacion, DB_ARCHIVO)
     #guardar_imagen(hora_consulta, IMAGEN_CARPETA, IMAGEN_URL)
-    print(f"[{hora_consulta}]: {radiacion} W/cm^2")
+    print(f"[{hora_consulta}]: {radiacion} W/m^2")
     time.sleep(FRECUENCIA)
